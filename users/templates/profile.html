@@ -1,0 +1,8 @@
+{% include 'myHome/navbar.html' %}
+<hr>
+{%if user.is_authenticated%}
+    <h1>Hello {{ user.username }}</h1>
+    <h1> I am from {{ user.location }}</h1>
+{%endif%}
+<hr>
+{% include 'myHome/footer.html' %}

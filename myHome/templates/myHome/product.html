@@ -1,0 +1,231 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product page</title>
+    <link rel="stylesheet" href="{% static 'product.css' %}">
+</head>
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark">
+        <div class="row py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center text-white">
+                    <small><i class="fa fa-phone-alt mr-2"></i>+91 8104728761</small>
+                    <small class="px-3">|</small>
+                    <small><i class="fa fa-envelope mr-2"></i>farmeasyproject2022.com</small>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-white pl-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand ml-lg-3">
+                <h1 class="m-0 display-5 text-uppercase text-primary"><i class="fa fa-truck mr-2"></i>FarmEasy</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav m-auto py-0">
+                    <a href="/" class="nav-item nav-link active">Home</a>
+                    <a href="/about" class="nav-item nav-link">About</a>
+                    <a href="/service" class="nav-item nav-link">Service</a>
+                    <a href="/cart" class="nav-item nav-link">Cart</a>
+                    <div class="nav-item dropdown">
+                        <a href="/blog" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="#" class="dropdown-item">Blog Grid</a>
+                            <a href="#" class="dropdown-item">Blog Detail</a>
+                        </div>
+                    </div>
+                    <a href="/contact" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="/signup" class="btn btn-primary py-2 px-4 d-none d-lg-block">Login</a>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="jumbotron jumbotron-fluid mb-5">
+        <div class="container text-center py-5">
+            <h1 class="text-white display-3">Buy</h1>
+            <div class="d-inline-flex align-items-center text-white">
+                <p class="m-0"><a class="text-white" href="">Home</a></p>
+                <i class="fa fa-circle px-3"></i>
+                <p class="m-0">buy</p>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <div class="listing-section">
+        <div class="product">
+          <div class="image-box">
+            <div class="images"id="image-1" ></div>
+          </div>
+          <div class="text-box">
+            <h2 class="item">Wheat</h2>
+            <h3 class="price">199rs</h3>
+            <p class="description">A bag of fresh and healthy wheat!</p>
+            <label for="item-1-quantity">Quantity:</label>
+            <input type="text" name="item-1-quantity" id="item-1-quantity" value="1">
+            <button type="button" name="item-1-button" id="item-1-button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="image-box">
+            <div class="images" id="image-2"></div>
+          </div>
+          <div class="text-box">
+            <h2 class="item">Vegetables</h2>
+            <h3 class="price">199rs</h3>
+            <p class="description">A bag of fresh and healthy Vegetables!</p>
+            <label for="item-2-quantity">Quantity:</label>
+            <input type="text" name="item-2-quantity" id="item-2-quantity" value="1">
+            <button type="button" name="item-2-button" id="item-2-button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="image-box">
+            <div class="images" id="image-3"></div>
+          </div>
+          <div class="text-box">
+            <h2 class="item">Rice</h2>
+            <h3 class="price">199rs</h3>
+            <p class="description">A bag of fresh and healthy rice!</p>
+            <label for="item-3-quantity">Quantity:</label>
+            <input type="text" name="item-3-quantity" id="item-3-quantity" value="1">
+            <button type="button" name="item-3-button" id="item-3-button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="image-box">
+            <div class="images" id="image-4"></div>
+          </div>
+          <div class="text-box">
+            <h2 class="item">Spices</h2>
+            <h3 class="price">199rs</h3>
+            <p class="description">A bag of fresh and healthy Spices!</p>
+            <label for="item-4-quantity">Quantity:</label>
+            <input type="text" name="item-4-quantity" id="item-4-quantity" value="1">
+            <button type="button" name="item-4-button" id="item-4-button">Add to Cart</button>
+          </div>
+        </div>
+        
+      <div class="cart-section">
+        
+        <div class="table-heading">
+          <h2 class="cart-product">Product</h2>
+          <h2 class="cart-price">Price</h2>
+          <h2 class="cart-quantity">Quantity</h2>
+          <h2 class="cart-total">Total</h2>
+        </div>  
+        
+        <div class="table-content">
+          <div class="cart-product">  
+            <div class="cart-image-box">
+              <div class="cart-images" id="image-4"></div>
+            </div>
+            <h2 class="cart-item">Spices</h2>
+            <p class="cart-description">A bag of Spices</p>
+          </div>
+          <div class="cart-price">
+            <h3 class="price">249rs</h3>
+          </div>
+          <div class="cart-quantity">
+            <input type="text" name="cart-1-quantity" id="cart-1-quantity" value="1">
+          </div>
+          <div class="cart-total">
+            <h3 class="price">249rs</h3>
+            <button type="button" class="remove" name="remove-1" id="remove-1">x</button>
+          </div>
+        </div>
+        
+        <div class="table-content">
+          <div class="cart-product">  
+            <div class="cart-image-box">
+              <div class="cart-images" id="image-3"></div>
+            </div>
+            <h2 class="cart-item">Rice</h2>
+            <p class="cart-description">A bag of Rice</p>
+          </div>
+          <div class="cart-price">
+            <h3 class="price">99rs</h3>
+          </div>
+          <div class="cart-quantity">
+            <input type="text" name="cart-1-quantity" id="cart-1-quantity" value="1">
+          </div>
+          <div class="cart-total">
+            <h3 class="price">99rs</h3>
+            <button type="button" class="remove" name="remove-2" id="remove-2">x</button>
+          </div>
+        </div>
+        
+        <div class="table-content">
+          <div class="cart-product">  
+            <div class="cart-image-box">
+              <div class="cart-images" id="image-2"></div>
+            </div>
+            <h2 class="cart-item">Vegetables</h2>
+            <p class="cart-description">A bag of Vegetables</p>
+          </div>
+          <div class="cart-price">
+            <h3 class="price">149rs</h3>
+          </div>
+          <div class="cart-quantity">
+            <input type="text" name="cart-1-quantity" id="cart-1-quantity" value="1">
+          </div>
+          <div class="cart-total">
+            <h3 class="price">149rs</h3>
+            <button type="button" class="remove" name="remove-3" id="remove-3">x</button>
+          </div>
+        </div>
+        
+        <div class="coupon">
+          <input type="text" name="coupon" id="coupon" placeholder="COUPON CODE">
+          <button type="button" name="coupon" id="coupon">Submit</button>  
+        </div>
+        
+        <div class="checkout">
+          <button type="button" name="update" id="update">Update</button>
+          <button type="button" name="checkout" id="checkout">Checkout</button>
+          <div class="final-cart-total">
+            <h3 class="price">497rs</h3>
+          </div>
+        </div>
+        
+        <div class="keep-shopping">
+          <button type="button" name="keep-shopping" id="keep-shopping">Keep Shopping</button>  
+        </div>
+        
+      </div>
+</body>
+</html>
